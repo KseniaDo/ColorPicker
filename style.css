@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p, h1 {
+    font-family: 'Montserrat', sans-serif;
+    cursor: default;
+}
+
+.header{
+    margin-top: 10px;
+}
+
+.service{
+    display: flex;
+}
+
+.rules{
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 10px;
+    padding: 5px;
+    width: 90%;
+    border: 5px black solid;
+    border-radius: 10px;
+}
+
+.description{
+    margin-right: 20px;
+}
+
+.text{
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.main{
+    margin: 0 auto;
+    width: 70%;
+}
+
+h1{
+    margin-left: 5px;
+}
+
+.dev{
+    margin-bottom: 5px;
+    margin-left: 5px;
+    width: 90%;
+    height: 0.5vh;
+    background-color: black;
+    border-radius: 35px;
+}
+
+.colorPicker{
+    width: 15vw;
+    height: 50vh;
+    outline: none;
+}
+
+.colorPicker:focus{
+    outline: none;
+}
+
+.content{
+    width: 15vw;
+}
+
+.container{
+    display: flex;
+    margin-top: 20px;
+    padding: 5px;
+    border: 5px black solid;
+    border-radius: 10px;
+}
+
+.block{
+    border: 5px white solid;
+    height: 25vh;
+}
+
+.color{
+    width: 100px;
+    height: 50px;
+    margin-left: 10px;
+    font-size: 20pt;
+
+    opacity: 0;
+    transition: opacity 0.3s linear;
+}
+
+.block:hover .color{
+    opacity: 1;
+}
+
+
+@media (max-width: 1035px) {
+    .service{
+        display: block;
+    }
+
+    .description{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: unset;
+    }
+
+    .container{
+        justify-content: center;
+    }
+
+    .rules{
+        width: 60%;
+        margin-right: 0;
+        margin-left: 30px;
+    }
+
+    .content{
+        width: 20vw;
+    }
+
+    .colorPicker{
+        width: 20vw;
+    }
+}

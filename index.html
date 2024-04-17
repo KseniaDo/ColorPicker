@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ColorPicker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+</head>
+<body>
+<div class="main">
+
+    <div class="service">
+
+    <div class="description">
+        <div class="header">
+            <h1>Color Picker</h1>
+            <div class="dev"></div>
+        </div>
+        <div class="current"></div>
+        <div class="rules">
+            <p class="text">This service will allow you to select the appropriate monochromatic colors.</p>
+            <p class="text">Click on the item in the middle to change the color. After selecting a color, you will be able to see the corresponding colors.
+                Click on adjacent elements to change the color in the middle and build a new scheme.</p>
+            <p class="text">When you click on an element, the selected color in HEX format is copied to the clipboard.</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="block block_js">
+                <p class="color color_js"></p>
+            </div>
+            <div class="block block_js">
+                <p class="color color_js"></p>
+            </div>
+        </div>
+        <input class="colorPicker colorPicker_js" type="color" value="#ff0000">
+        <div class="content">
+            <div class="block block_js">
+                <p class="color color_js"></p>
+            </div>
+            <div class="block block_js">
+                <p class="color color_js"></p>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
